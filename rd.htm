@@ -1,13 +1,16 @@
-<!DOCTYPE HTML><html lang="en-US"><head><meta charset="UTF-8"><script type="text/javascript"><!--
+<!DOCTYPE HTML><html lang="en-US"><head><meta charset="UTF-8"><script type="text/javascript"><!-- 
 var sw_targ=true; var qs = querySt('t'); switch(qs) {
-case 'myb22'   :ff_targ='rdetails/idxmybridge.htm';          ff_targ_text='my bridge pages';                         break; // bit.ly/cebcmenu
-case 'cebc22'  :ff_targ='rdetails/idxcebc.htm';              ff_targ_text='the Crouch End Bridge Club';              break; // bit.ly/cebcmenu
-case 'gots22'  :ff_targ='rdetails/idxgots.htm';              ff_targ_text='the Green on the Screen venue';           break; // bit.ly/gotsven
-case 'hth22'   :ff_targ='rdetails/idxhth.htm';               ff_targ_text='the Hornsey Town Hall website';           break; // bit.ly/hthsite
-case 'tw22'    :ff_targ='https://facebook.com/treewardens';  ff_targ_text='the Haringey Tree Wardens Facebook page'; break;
+case 'myb22'   :ff_targ='rdetails/idxmybridge.htm';          ff_targ_text='my bridge pages';                     break; // bit.ly/cebcmenu
+case 'cebc22'  :ff_targ='rdetails/idxcebc.htm';              ff_targ_text='Crouch End Bridge Club';              break; // bit.ly/cebcmenu
+case 'gots22'  :ff_targ='rdetails/idxgots.htm';              ff_targ_text='Green on the Screen venue';           break; // bit.ly/gotsven
+case 'hth22'   :ff_targ='rdetails/idxhth.htm';               ff_targ_text='Hornsey Town Hall website';           break; // bit.ly/hthsite http://codeleftlab.github.io/redir/rd.htm?t=hth22
+case 'hthfb22'   :ff_targ='https://www.facebook.com/groups/hornseytownhall/'; ff_targ_text='Hornsey Town Hall Facebook Group';    break; // bit.ly/HTHgroup http://codeleftlab.github.io/redir/rd.htm?t=hthfb22
+case 'hthfb23'   :ff_targ='https://www.facebook.com/groups/hornseytownhall/'; ff_targ_text='Hornsey Town Hall Facebook Group';    break; // bit.ly/HTHGroup http://codeleftlab.github.io/redir/rd.htm?t=hthfb23
+case 'hthfb24'   :ff_targ='https://www.facebook.com/groups/hornseytownhall/'; ff_targ_text='Hornsey Town Hall Facebook Group';    break; // bit.ly/HTHGROUP http://codeleftlab.github.io/redir/rd.htm?t=hthfb24
+case 'tw22'    :ff_targ='https://facebook.com/treewardens';  ff_targ_text='Haringey Tree Wardens Facebook page'; break;
 default:sw_targ=false;break;
 }
-if (sw_targ==true) {document.write('<meta http-equiv="refresh" content="1;url='+ff_targ+'"><title>Redirection to '+ff_targ_text+'</title>'); window.location.href=ff_targ;}
+if (sw_targ==true) {document.write('<meta http-equiv="refresh" content="1;url='+ff_targ+'"><title>'+ff_targ_text+'</title>'); window.location.href=ff_targ;}
 else {document.write('There may have been an error - no action possible');}
 function querySt(Key) {var url = window.location.href; KeysValues = url.split(/[\?&]+/);
 for (i = 0; i < KeysValues.length; i++) {KeyValue = KeysValues[i].split("="); if (KeyValue[0] == Key) {return KeyValue[1];}}}
