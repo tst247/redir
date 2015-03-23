@@ -16,3 +16,5 @@ pre {white-space:pre-wrap;/* css-3 */ white-space:-moz-pre-wrap; /* Mozilla, sin
 .playlist-btn {	background:#000; 	text-decoration:none; 	font-weight:bold; 	font-style:normal; 	text-transform:uppercase; 	font-size:14px; 	padding:5px 10px; 	margin-right:10px;	border-radius:5px; }
 .dimmed {opacity:.7;}
 .footer-text {	padding:0 20px;	font-size:.9em;	font-style:italic;	opacity:.8;	text-shadow: 1px 1px 1px rgba(0,0,0,.8);}
+
+.szabig  a {font-size:3em;}
