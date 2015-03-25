@@ -8,17 +8,30 @@
 <link rel="manifest" href="img/favicons/manifest.json"><link rel="shortcut icon" href="img/favicons/favicon.ico"><meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png"><meta name="msapplication-config" content="img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff">
 
-<title>North London Arduino Day</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'><meta name="Resource-type" content="Document" />
-<meta name="author" content="Chris Setz" /><base target="_blank">
-<link rel="stylesheet" type="text/css" href="css/idxad2015.fullPage2.6.0.css" /><link rel="stylesheet" type="text/css" href="css/idxad2015.css" /></head>
+<title>North London Arduino Day</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Resource-type" content="Document" />
+<meta name="author" content="Chris Setz" /><base target="_blank"><link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/idxad2015.fullPage2.6.0.css" /><link rel="stylesheet" type="text/css" href="css/idxad2015.css" />
+<script type="text/javascript" src="js/greensock/minified/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/greensock/minified/plugins/DrawSVGPlugin.min.js"></script>
+<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
 
 <body><div id="fullpage">
-<div id="section0" class="section"><div class="content"><a href="https://www.facebook.com/events/671627466296855/"><h2><img src="img/hcglogo.png" style="border:1px solid #021a40;">North London Arduino Day</h2><p>Saturday midday till 4pm 28th march, Salisbury Pub, Green Lanes</p>
+<div id="section0" class="section"><div class="content">
+<div class="svg-container" id="container"><svg id="loader" width="100%" height="100%" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet">
+<path id="jump" fill="none" stroke="#383845" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M47.5,94.3c0-23.5,19.9-42.5,44.5-42.5s44.5,19,44.5,42.5" /><g stroke="#383845" stroke-width="1">
+<ellipse id="circleL" fill="none" stroke-miterlimit="10" cx="47.2" cy="95.6" rx="10.7" ry="2.7" />
+<ellipse id="circleR" fill="none" stroke-miterlimit="10" cx="136.2" cy="95.6" rx="10.7" ry="2.7" /></g></svg></div>
+<a href="https://www.facebook.com/events/671627466296855/"><h2><img src="img/hcglogo.png" style="border:1px solid #021a40;">North London Arduino Day</h2><p>Saturday midday till 4pm 28th march, Salisbury Pub, Green Lanes</p>
 <img src="img/ArduinoDayFb.jpg" /></a>
 <div class="szadd">Families! Accompanied children welcome</div>
 <div class="szadd">Please 'join' the <a href="https://www.facebook.com/events/671627466296855/">Facebook event page</a> and tweet <a href="www.twitter.com">#ArduinoD15</a></div>
 <div class="szadd">To fully take part you could <a href="http://arduino.cc/en/Guide/HomePage">install the Arduino Software before you arrive.</a></div>
+<!-- <video autoplay loop muted controls="false" id="myVideo"><source src="vids/flowers.mp4" type="video/mp4"><source src="vids/flowers.webm" type="video/webm"></video>
+<div class="layer"><h1>videos</h1></div> -->
 </div>
 </div>
 
@@ -47,8 +60,6 @@ Robots, drones and people welcome!<br />
 </h2>
 	</div></div>
 	
-
-
 <div id="section2" class="section" ><div class="content"><h1>Finally</h1>
 <div class="szadd">Read/alter/add to the <a href="https://hackpad.com/Maker-Shack-uf3jvRKGyGE">Event plan</a></div>
 <p><a href="https://www.facebook.com/events/671627466296855/">Please 'join' the event on our facebook page</a></p></div>
@@ -59,7 +70,7 @@ Robots, drones and people welcome!<br />
 <script src="js/jquery/easings.min.js"></script><script type="text/javascript" src="js/jquery/slimscroll.min.js"></script>
 <script src="js/jquery/fullPage2.6.2.js"></script><script type="text/javascript" src="js/yt2.js"></script><script type="text/javascript" src="js/ytembed.js"></script>
 <!-- Demo -->
-<script>$('#fullpage').fullpage({responsive: 900,});$('.arrowUp').click(function(){$.fn.fullpage.moveSectionUp();}); $('.arrowDown').click(function(){$.fn.fullpage.moveSectionDown();});
+<script>$('#fullpage').fullpage({responsive: 900,fitToSection: true,verticalCentered: true,});$('.arrowUp').click(function(){$.fn.fullpage.moveSectionUp();}); $('.arrowDown').click(function(){$.fn.fullpage.moveSectionDown();});
 ytEmbed.init({'block':'ytThumbs','q':'arduino project','type':'search','results':5,'order':'highest_rating','player':'embed','layout':'full'});
 </script>
 </body></html>

@@ -72,12 +72,19 @@ Robots, drones and people welcome!<br />
 
 <div id="section2" class="section" ><div class="content"><h1>Finally</h1><p><a href="https://www.facebook.com/events/671627466296855/">Please 'join' the event on our facebook page</a></p></div>
 </div>
-
-</div><script type="text/javascript" src="js/app.js"></script><script type="text/javascript" src="js/yt2.js"></script><script type="text/javascript" src="js/ytembed.js"></script>
-<script type="text/javascript">fullpage('#fullpage', {anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],	menu: '#menu',	css3:true, 
+fullpage('#fullpage', {anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],	menu: '#menu',	css3:true, 
 navigation: true,navigationPosition: 'left',navigationTooltips: ['First page', 'Second page', 'Third Page', 'Fourth Page', 'Last Page']});
-
-
+</div><script type="text/javascript" src="js/app.js"></script><script type="text/javascript" src="js/yt2.js"></script><script type="text/javascript" src="js/ytembed.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+			$('#fullpage').fullpage({verticalCentered: true, continuousVertical: true,	sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+			anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],	menu: '#menu',	css3:true, navigation: true,navigationPosition: 'left',
+			navigationTooltips: ['First page', 'Second page', 'Third Page', 'Fourth Page', 'Last Page']
+			afterRender: function(){$('video').get(0).play();} //playing the video
+			});
+		});
 ytEmbed.init({'block':'ytThumbs','q':'arduino project','type':'search','results':5,'order':'highest_rating','player':'embed','layout':'full'});
 </script>
+
+		
 </body></html>
