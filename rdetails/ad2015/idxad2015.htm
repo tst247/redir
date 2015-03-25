@@ -10,34 +10,11 @@
 
 <title>North London Arduino Day</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'><meta name="Resource-type" content="Document" />
-<meta name="author" content="Chris Setz" /><base target="_blank"><link rel="stylesheet" type="text/css" href="css/app.css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/jquery/jquery.slimscroll.min.js"></script>
-<style>@charset 'utf-8';
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre, form,fieldset,input,textarea,p,blockquote,th,td {padding: 0; margin: 0;}
-a{text-decoration:none;} table {border-spacing: 0;} fieldset,img {border: 0;}  address,caption,cite,code,dfn,em,strong,th,var {font-weight: normal;  font-style: normal;}
-strong{font-weight: bold;} 	ol,ul {list-style: none;   margin:0;   padding:0;} caption,th {text-align: left;} h1,h2,h3,h4,h5,h6 {font-weight: normal;  font-size: 100%; margin:0;  padding:0;  color:#444;}
-q:before,q:after { content:'';}	abbr,acronym { border: 0;}
-
-body{font-family: 'Open Sans', sans-serif;	color: #F2F2F2;}  h1{font-size: 6em;} h2{font-size: 4em;} h3{font-size: 3em;} p{font-size: 2em;} 
-.content{position: relative;top: 30%;transform: translateY(-40%);text-align: center;}
-#section0{background-color: #BFDA00;}	#section0 h1{color: #444;}	    #section0 p{color: #333;opacity: 0.4;}
-#section1{background-color: #2EBE21;}	#section1 h1{color: #fff;}      #section1 p{opacity: 0.8;} 
-#section2{background-color: #2C3E50;}	#section2 h1{color: #F2F2F2;}	#section2 p{opacity: 0.6;} #section2 a{color: red;}
-
-.szadd {font-size: 3em;color: #green;}
-.szyt{}
-#slide2 {text-align: center;align: center;}
-.section {    text-align:center;}
-.arrowUp, .arrowDown{position:fixed; z-index:99; cursor: pointer; width: 0;  height: 0;  border-style: solid;  margin-left: -38px;  left: 50%;}
-.arrowDown{bottom: 20px; border-width: 38.5px 34px 0 38.5px; border-color: #fff transparent transparent transparent;}
-.arrowUp{ top: 20px; border-width: 0 38.5px 34px 38.5px;  border-color: transparent transparent #fff transparent;}
-</style></head>
+<meta name="author" content="Chris Setz" /><base target="_blank">
+<link rel="stylesheet" type="text/css" href="css/idxad2015.fullPage2.6.0.css" /><link rel="stylesheet" type="text/css" href="css/idxad2015.css" /></head>
 
 <body><div id="fullpage">
-
-<div id="section0" class="section" ><div class="content"><a href="https://www.facebook.com/events/671627466296855/"><h2><img src="img/hcglogo.png">North London Arduino Day</h2><p>Saturday midday till 4pm 28th march, Salisbury Pub, Green Lanes</p>
+<div id="section0" class="section"><div class="content"><a href="https://www.facebook.com/events/671627466296855/"><h2><img src="img/hcglogo.png" style="border:1px solid #021a40;">North London Arduino Day</h2><p>Saturday midday till 4pm 28th march, Salisbury Pub, Green Lanes</p>
 <img src="img/ArduinoDayFb.jpg" /></a>
 <div class="szadd">Families! Accompanied children welcome</div>
 <div class="szadd">Please 'join' the <a href="https://www.facebook.com/events/671627466296855/">Facebook event page</a> and tweet <a href="www.twitter.com">#ArduinoD15</a></div>
@@ -57,7 +34,7 @@ Robots, drones and people welcome!<br />
 	<div class="slide" id="slide2"><h1>Build a project</h1><div id="ytThumbs"></div></div>
 	<div class="slide" id="slide2"><h1>Arduino Links</h1><h2><ul>
 	<li><a href="http://arduino.cc/en/Main/Products">All the products Arduino sell</a></li><br />
-	<li><a href="http://arduino-info.wikispaces.com/Arduino-What-IS-it#ArduinoHardware">Explanation</a></li><br />
+	<li><a href="http://arduino-info.wikispaces.com/Arduino-What-IS-it#ArduinoHardware">What is Arduino Hardware?</a></li><br />
 	<li><a href="http://arduino-info.wikispaces.com/YourDuinoStarter">Learn more here</a></li><br />
 	<li><a href="http://arduino-info.wikispaces.com/ArduinoPower">Powering things</a></li><br />
 	<li><a href="http://hacknmod.com/hack/top-40-arduino-projects-of-the-web/">Top 40 projects</a></li></ul></h2><br />	
@@ -79,7 +56,10 @@ Robots, drones and people welcome!<br />
 
 </div><div class="arrowUp"></div>
 <div class="arrowDown"></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-<script src="js/jquery/jquery.fullPage2.6.2.js"></script>
+<script src="js/jquery/easings.min.js"></script><script type="text/javascript" src="js/jquery/slimscroll.min.js"></script>
+<script src="js/jquery/fullPage2.6.2.js"></script><script type="text/javascript" src="js/yt2.js"></script><script type="text/javascript" src="js/ytembed.js"></script>
 <!-- Demo -->
-<script>$('#fullpage').fullpage({});$('.arrowUp').click(function(){$.fn.fullpage.moveSectionUp();}); $('.arrowDown').click(function(){$.fn.fullpage.moveSectionDown();});</script>
+<script>$('#fullpage').fullpage({responsive: 900,});$('.arrowUp').click(function(){$.fn.fullpage.moveSectionUp();}); $('.arrowDown').click(function(){$.fn.fullpage.moveSectionDown();});
+ytEmbed.init({'block':'ytThumbs','q':'arduino project','type':'search','results':5,'order':'highest_rating','player':'embed','layout':'full'});
+</script>
 </body></html>
