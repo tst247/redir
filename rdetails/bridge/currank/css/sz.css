@@ -1,0 +1,30 @@
+/* EQCSS Required - http://elementqueries.com for info http://codepen.io/zawszaws/pen/XNdjeE */
+* {font-family:'Source Sans Pro', 'Open Sans', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+
+    h2, p {margin: .5em 0;} max-width:100%; white-space:nowrap; 
+/* Responsive Table Reset */ [data-table] {font-size: 14pt; width: 100%;}
+
+@element '[data-table]' and (max-width: 500px) {$this, $this caption, $this thead, $this tbody, $this tfoot, $this tr, $this th,
+  $this td {display: block; width: 100%; } }
+@element '[data-table]' and (min-width: 500px) {$this .p1 {color: #fff;} $this {display: table; width: 90%;} 
+$this caption {display: table-caption; width: auto;}   $this thead {display: table-header-group; width: auto; }
+  $this tbody {display: table-row-group; width: auto;} $this tfoot {display: table-footer-group; width: auto; }
+  $this tr    {display: table-row; width:auto;} $this th, $this td {display: table-cell; width: auto; }
+  $this th:first-of-type {float: right;} 
+   
+  }
+  
+/* Default Table Theme */ @element '[data-table]' {$this {font-family: 'Source Sans Pro', sans-serif; margin: 1em 0; color: green; border-collapse: collapse;} $this thead th,  $this tfoot th {color: silver; background: rgba(0,0,0,.1); } 
+$this caption {color: black; padding: .5em;} $this th, $this td {padding: .5em; border: 1px solid #aaa; }
+$this td:first-of-type {float: right;} 
+$this tbody tr:nth-of-type(even) {background: rgba(5,235,0,.05); } 
+$this tbody tr:nth-of-type(odd) {background: rgba(235,5,0,.05); } 
+#rak {color: blue;} 
+}
+
+/* Grid Table Layout */ @element '[data-table^=col-]' and (max-width: 500px) {$this thead {display: none;}
+  $this tr:after {content: '';  display: block; clear: both;} $this[data-table$=-two] td { width: 50%; }
+$this td {float: left; line-height: 1.4; padding: .5em 0; text-align: center; position: relative;}
+$this td:nth-of-type(n+2) {padding-bottom: 17.5pt;} $this td:after {content: attr(data-heading); display: block; width: 100%; position: absolute;  bottom: 5pt; left: 0; font-size: 10pt; line-height: 1.2; color: #999;}
+$this td:first-of-type:after {display: none; } $this td:nth-of-type(n+2) {border-top: none;}
+$this[data-table$=-two] td:nth-of-type(n+2):nth-of-type(odd), $this td:first-of-type {color: yellow; background: rgba(0,0,222,.1); font-weight: 600; width: 100%;  }}
