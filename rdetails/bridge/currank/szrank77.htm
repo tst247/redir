@@ -22,6 +22,8 @@ var szPromise=Promise.resolve($.ajax({url:szXUrl,type:'POST',cache:false,dataTyp
 szPromise.then(function(response) {szProc(response,0);},function(xhrObj) {console.log('xhrObj=',xhrObj);});
 
 } );
+function querySt(Key) {var url = window.location.href; KeysValues = url.split(/[\?&]+/);
+for (i = 0; i < KeysValues.length; i++) {KeyValue = KeysValues[i].split("="); if (KeyValue[0] == Key) {return KeyValue[1];}}}
 </script></head><body><div class="szhead"></div>
 <div class="panes"></div><!-- end of container -->
 <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
