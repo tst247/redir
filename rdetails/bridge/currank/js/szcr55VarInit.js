@@ -2,7 +2,7 @@ var gV={};gV['out']={};gP=[];//global array of vars and params
 gP['Package']='Free BriAn';gP['dbSvr']='http://sz.tld/data/datastore/xml';
 var szUrl22=gP['dbSvr']+"/cebcNSEW1.xml",szUrl33=gP['dbSvr']+"/cebcNSEW2.xml";
 var szdb,szdbRef,szScreenData,szul,szUrl, szData2, szPromise,szXUrl,szHeatName; 
-var szEventName,szPairs,szFinalSetofResults,szPromise22,szPromise33;
+var szEventName,szPairs,szFinalSetofResults,szPromise22,szPromise33,szParam;
 var szDBname='reviews',szUrlroot='cebcNSEW',szDataType='xml',szPostType='GET',szOutHead='',szOutDetail='';
 //szXUrl='http://wp-extern.rhcloud.com/pub/cebcNSEW2.xml';
 //szXUrl='https://httpbin.org/xml';'http://sz.tld/data/datastore/xml/nedAP101.xml'
