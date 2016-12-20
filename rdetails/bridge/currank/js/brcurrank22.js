@@ -1,15 +1,46 @@
-jQuery(document).ready(function($){var szUseLocalData=true;
+jQuery(document).ready(function($){var szUseLocalData=false; 
+ $(function(){/* var docElm = document.documentElement;
+if (docElm.requestFullscreen) {docElm.requestFullscreen();}
+else if (docElm.mozRequestFullScreen) {docElm.mozRequestFullScreen();}
+else if (docElm.webkitRequestFullScreen) {docElm.webkitRequestFullScreen();}
+else if (docElm.msRequestFullscreen) {docElm.msRequestFullscreen();} */
+	 
+	 
+	// var vid = document.getElementById("myRank"); vid.webkitEnterFullscreen();
+/*
+            // hide video and button until we know they're loaded
+            $("#myRank").css({'visibility' : 'hidden', 'display' : 'none'});
+            $("#fs").css({'visibility' : 'hidden'});
+
+            // when video is loaded // show button to launch video
+            // $("#myRank").bind('loadedmetadata', function () { $("#fs").css({'visibility' : 'visible'}); });
+		
+			// extend button functionality
+            $('#fs').bind('click', function() {
+                // display the video
+                $("#myRank").css({'visibility' : 'visible', 'display' : 'block'});
+
+                // launch the video fullscreen
+                var vid = document.getElementById("myRank"); vid.webkitEnterFullscreen();
+            });*/
+				
+			
+        });
+/*
 if (szUseLocalData==false) {	
 var url='https://www.brianbridge.net/cgi-bin/briancurrankxml.cgi?callback=?';
 $.ajax({url:url,type:'POST',cache:false,dataType:'text',data:'ned',processData:false,crossDomain:true,contentType:'text/plain'})
 .done (function(data) {szProcXML(data);})
 .fail (function(jqxhr, textStatus, errorThrown)  {console.log("Error: " , textStatus , " : " + errorThrown) ; }); }
 
-else {szProcXML(szData());}
-});
+else {szProcXML(szData());} */
+}); 
 
-function szProcXML(data) {var xmlDoc=$.parseXML(data); szSectionN(xmlDoc);
+function szProcXML(data) {var xmlDoc=$.parseXML(data); szSectionN(xmlDoc);console.log('xml=',xmlDoc);
+var szpb=$(data).find('root').attr('pb'); var sztb=$(data).find('root').attr('tb');
+console.log('szpb=',sztb,'sztb=',sztb);
 var x =xmlDoc.getElementsByTagName('item');// console.log('data=',data);
+
 var szTable="<caption>Current Rankings</caption>"+"<thead><tr><th>Score</th><th>Names</th>"+ "</tr></thead><tbody>";
 for (i = 0; i <x.length; i++) {
 	var szsc=x[i].getElementsByTagName("sc")[0].childNodes[0].nodeValue,
