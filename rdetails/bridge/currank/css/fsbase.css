@@ -10,7 +10,7 @@ li, dd {margin-left: 1.5em;}
 img {border: none; vertical-align: middle;}
 /* Basic element styles */
 a {color: #000;} a:hover {text-decoration: underline;}
-html {color: #000; background: gold; min-height: 100%;} body {margin-bottom: 30px;} ul {margin: 10px 0;}
+/* html {color: #000; background: gold; min-height: 100%;} body {margin-bottom: 30px;} ul {margin: 10px 0;} */
 /* Structure */
 .container { width: 560px;min-height: 600px;background: #fff;border: 1px solid #ccc;border-top: none;
 	margin: 20px auto;padding: 20px;-moz-border-radius: 10px;-webkit-border-radius: 10px;border-radius: 10px;
